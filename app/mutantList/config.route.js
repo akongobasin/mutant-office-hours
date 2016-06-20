@@ -11,8 +11,8 @@ angular
 
   function configFunction($stateProvider) {
     $stateProvider.state('mutantList',{
-      url:'/mutantList'
-      templateUrl:'app/mutantList/mutantList.html'
+      url:'/mutantlist',
+      templateUrl:'app/mutantList/mutantList.html',
       controller: 'MutantListController',
       controllerAs: 'vm'
 });

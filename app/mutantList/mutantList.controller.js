@@ -6,7 +6,11 @@
 
 function MutantListController() {
     var vm = this;
-    vm.mutants= ['deadpool', 'nightcrawler', 'gambit'];
 
+    vm.addMutant= addmutant;
+    vm.mutants= ['deadpool', 'nightcrawler', 'gambit'];
+function addMutant() {
+  vm.muants.push('seth');
+}
 }
 })();
