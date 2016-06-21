@@ -1,16 +1,28 @@
 (function() {
-    'use strict';
-    angular
-      .module('mutantApp.mutantList')
-      .controller('MutantListController', MutantListController);
+  'use strict';
 
-function MutantListController() {
+  angular
+    .module('mutantApp.mutantList')
+    .controller('MutantListController', MutantListController);
+
+  function MutantListController() {
     var vm = this;
 
-    vm.addMutant= addmutant;
-    vm.mutants= ['deadpool', 'nightcrawler', 'gambit'];
-function addMutant() {
-  vm.muants.push('seth');
-}
-}
+    vm.addMutant = addMutant;
+    vm.mutants = ['deadpool', 'nightcrawler', 'gambit'];
+    vm.newMutant = new Mutant();
+
+
+    function Mutant() {
+      this.name = '';
+      this.phone = '';
+      this.topic = '';
+      this.notified = false;
+      this.complete = false;
+    }
+
+    function addMutant() {
+      vm.mutants.push(vm.newMutant);
+    }
+  }
 })();

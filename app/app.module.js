@@ -1,3 +1,4 @@
+
 (function() {
   'use strict';
 
@@ -8,8 +9,8 @@
     // Third-party modules
     'firebase',
 
-
-    //custom modules
+    // Custom modules
     'mutantApp.home',
+    'mutantApp.mutantList',
   ]);
 })();
