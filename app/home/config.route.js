@@ -2,15 +2,15 @@
   'use strict';
 
   angular
-    .module("mutantApp.home", [])
+    .module('mutantApp.home')
     .config(configFunction);
 
-   configFunction.$inject= ['$stateProvider'];
+  configFunction.$inject = ['$stateProvider'];
 
-  function configFunction($stateProvider){
+  function configFunction($stateProvider) {
     $stateProvider.state('home', {
       url: '/',
       templateUrl: 'app/home/home.html'
-    })
+    });
   }
 })();
