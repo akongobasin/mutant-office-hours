@@ -1,6 +1,3 @@
-<xt-mutant-form mutants="vm.mutants"></xt-mutant-form>
-
-<<<<<<< HEAD
 <div class="small-12 columns">
   <table class="hover">
     <thead>
@@ -19,15 +16,13 @@
         <td>{{ mutant.phone }}</td>
         <td>{{ mutant.topic }}</td>
         <td>{{ mutant.notified ? 'Yes' : 'No' }}</td>
-        <td><input type="checkbox" ng-model="mutant.complete"></td>
+        <td><input type="checkbox" ng-model="mutant.complete" ng-change="vm.toggleComplete(mutant)"></td>
         <td>
-          <button class="button success">Text</button>
-          <button class="button alert">Delete</button>
+          <button ng-click="vm.sendText(mutant)" class="button success">Text</button>
+          <button ng-click="vm.deleteMutant(mutant)" class="button alert">Delete</button>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
-=======
-<xt-mutant-table mutants="vm.mutants"></xt-mutant-table>
->>>>>>> afternoon
+Status API Training Shop Blog About
